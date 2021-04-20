@@ -1,0 +1,11 @@
+@port = 3000
+@url = http://localhost:{{port}}
+
+### POST SETTINGS
+POST {{url}}/settings
+Content-Type: application/json
+
+{
+  "chat": true,
+  "username": "username"
+}

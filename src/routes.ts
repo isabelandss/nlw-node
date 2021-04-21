@@ -1,7 +1,8 @@
 import { Router } from 'express'
-import { SettingsController, UsersController } from './controllers'
+import { MessagesController, SettingsController, UsersController } from './controllers'
 
 export const routes = Router()
 
 routes.post('/settings', SettingsController.create)
 routes.post('/users', UsersController.create)
+routes.post('/messages', MessagesController.create)

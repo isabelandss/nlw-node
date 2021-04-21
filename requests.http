@@ -1,7 +1,7 @@
 @port = 3000
 @url = http://localhost:{{port}}
 
-### POST SETTINGS
+### POST /settings
 POST {{url}}/settings
 Content-Type: application/json
 
@@ -10,10 +10,20 @@ Content-Type: application/json
   "username": "isabela"
 }
 
-### POST USERS
+### POST /users
 POST {{url}}/users
 Content-Type: application/json
 
 {
   "email": "email2@email.com"
+}
+
+### POST /messages
+POST {{url}}/messages
+Content-Type: application/json
+
+{
+  "user_id": "3259ad83-96c9-4120-9924-fbf11dda5e8a",
+  "admin_id": "b56dc92a-3e62-4450-a2b9-81c56a4e16f5",
+  "text": "olá :)"
 }

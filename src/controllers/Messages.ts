@@ -12,6 +12,12 @@ const MessagesController = {
     } catch (error) {
       return res.status(400).json(error)
     }    
+  },
+  listByUser: async (req: Request, res: Response) => {
+    const { user_id } = req.params
+
+    const messages = await MessagesService.listByUser({ user_id })
+    return res.json(messages)
   }
 }
 

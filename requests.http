@@ -27,3 +27,6 @@ Content-Type: application/json
   "admin_id": "b56dc92a-3e62-4450-a2b9-81c56a4e16f5",
   "text": "olá :)"
 }
+
+### GET /messages/:user_id
+GET {{url}}/messages/3259ad83-96c9-4120-9924-fbf11dda5e8a

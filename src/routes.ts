@@ -4,5 +4,8 @@ import { MessagesController, SettingsController, UsersController } from './contr
 export const routes = Router()
 
 routes.post('/settings', SettingsController.create)
+
 routes.post('/users', UsersController.create)
+
 routes.post('/messages', MessagesController.create)
+routes.get('/messages/:user_id', MessagesController.listByUser)

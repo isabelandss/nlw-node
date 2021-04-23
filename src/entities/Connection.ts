@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryColumn, CreateDateColumn, Timestamp, UpdateDateColumn, JoinColumn, OneToOne, ManyToOne } from 'typeorm'
+import { Entity, Column, PrimaryColumn, CreateDateColumn, UpdateDateColumn, JoinColumn, OneToOne, ManyToOne } from 'typeorm'
 import { v4 as uuid } from 'uuid'
 import { User } from '.'
 

@@ -15,6 +15,11 @@ const UsersService = {
     await usersRepository.save(user)
 
     return user
+  },
+  findByEmail: async ({ email }) => {
+    const usersRepository = getCustomRepository(UsersRepository)
+
+    return await usersRepository.findOne({ email })
   }
 }
 

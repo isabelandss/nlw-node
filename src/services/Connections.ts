@@ -20,6 +20,10 @@ const ConnectionsService = {
     })
 
     return await connectionRepository.save(connection)
+  },
+  findByUserId: async ({ user_id = '' }) => {
+    const connectionRepository = getCustomRepository(ConnectionsRepository)
+    return await connectionRepository.findOne({ user_id })
   }
 }
 

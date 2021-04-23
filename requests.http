@@ -7,7 +7,16 @@ Content-Type: application/json
 
 {
   "chat": true,
-  "username": "isabela"
+  "username": "admin"
+}
+
+### PATCH /settings
+PATCH {{url}}/settings/admin
+Content-Type: application/json
+
+{
+  "chat": true,
+  "username": "admin"
 }
 
 ### POST /users

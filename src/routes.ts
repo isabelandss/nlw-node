@@ -3,6 +3,8 @@ import { MessagesController, SettingsController, UsersController } from './contr
 
 export const routes = Router()
 
+routes.get('/settings/:username', SettingsController.findByUsername)
+routes.patch('/settings/:username', SettingsController.update)
 routes.post('/settings', SettingsController.create)
 
 routes.post('/users', UsersController.create)
